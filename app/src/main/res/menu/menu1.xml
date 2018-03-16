@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dietplanner"
+        android:orderInCategory="1"
+        android:title="My Diet Planner"/>
+    <item
+        android:id="@+id/task_schedule"
+        android:orderInCategory="2"
+        android:title="My Task Scheduler"/>
+    <item
+        android:id="@+id/med_track"
+        android:orderInCategory="3"
+        android:title="Track the medicine"/>
+    <item
+        android:id="@+id/alert"
+        android:orderInCategory="4"
+        android:title="Send alert to hospital"/>
+
+
+</menu>
