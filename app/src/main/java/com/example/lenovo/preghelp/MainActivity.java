@@ -1,14 +1,15 @@
 package com.example.lenovo.preghelp;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,48 +17,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu1) {
-        getMenuInflater().inflate(R.menu.menu1,menu1);
-        return true;
+    public void alert(View view) {
+        Intent intent = new Intent(this, alert.class);
+        startActivity(intent);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId())
-        {
-            case R.id.dietplanner:
-            {
-                Intent intent = new Intent(MainActivity.this,taskscheduler.class);
-
-                startActivity(intent);
-                return true;
-            }
-            case R.id.task_schedule:
-            {
-                Intent intent = new Intent(MainActivity.this,dietplanner.class);
-
-                startActivity(intent);
-
-                return true;
-            }
-            case R.id.med_track:
-            {
-                Intent intent = new Intent(MainActivity.this,Track_medicine.class);
-                startActivity(intent);
-
-                return true;
-            }
-            case R.id.alert:
-            {
-                Intent intent = new Intent(MainActivity.this,alert.class);
-                startActivity(intent);
-
-                return true;
-            }
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+    public void track(View view) {
+        Intent intent = new Intent(this, Track_medicine.class);
+        startActivity(intent);
     }
+
+    public void dietplaner(View view) {
+        Intent intent = new Intent(this, dietplanner.class);
+        startActivity(intent);
+    }
+
+    public void task(View view) {
+        Intent intent = new Intent(this, taskscheduler.class);
+        startActivity(intent);
+    }
+
 }

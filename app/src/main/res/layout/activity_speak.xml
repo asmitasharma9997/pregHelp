@@ -4,29 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lenovo.preghelp.Track_medicine">
+    tools:context="com.example.lenovo.preghelp.speak">
 
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="65dp"
-        android:text="TextView"
-        android:layout_alignParentTop="true"
+        android:layout_height="60dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="23dp"
+        android:hint="Enter text" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="getSpeechInput"
+        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginTop="23dp"
+        android:text="Pitch" />
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id= "@+id/seek_bar_pitch"
+        android:progress="50"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="39dp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Speed"
+        android:layout_below="@+id/seek_bar_pitch"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tv1"
-        android:layout_marginLeft="132dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="105dp"
-        android:onClick="getSpeechInput"
-        android:text="Button" />
+        android:layout_marginTop="18dp" />
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id= "@+id/seek_bar_speed"
+        android:progress="50"
+        android:layout_below="@+id/seek_bar_pitch"
+        android:layout_alignLeft="@+id/seek_bar_pitch"
+        android:layout_alignStart="@+id/seek_bar_pitch"
+        android:layout_marginTop="61dp" />
+
+
+
 </RelativeLayout>

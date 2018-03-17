@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "583228671869",
-    "firebase_url": "https://bookx-27484.firebaseio.com",
-    "project_id": "bookx-27484",
-    "storage_bucket": "bookx-27484.appspot.com"
+    "project_number": "1021409496654",
+    "firebase_url": "https://preghelp-8285b.firebaseio.com",
+    "project_id": "preghelp-8285b",
+    "storage_bucket": "preghelp-8285b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:583228671869:android:be51d30a886179c0",
+        "mobilesdk_app_id": "1:1021409496654:android:05a8217a7c019b80",
         "android_client_info": {
-          "package_name": "com.example.lenovo.bookx"
+          "package_name": "com.example.lenovo.preghelp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "583228671869-covi1amlagrev4ac2inmfncadn7fvfja.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.lenovo.bookx",
-            "certificate_hash": "076b07b00813def28c4ab701b910484dfdf09628"
-          }
-        },
-        {
-          "client_id": "583228671869-18egljdm1cn5uprubtmq5p17r5eg62tb.apps.googleusercontent.com",
+          "client_id": "1021409496654-aoifsttnbkrnp3f4q4lbo9c6lco04ggq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAGjHtV9bsuliKq5cwnfVK9pY7x6i4xnRU"
+          "current_key": "AIzaSyCakVRnA7ZRdhKtcYT7DVs-u7wpyAKLSTM"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "583228671869-18egljdm1cn5uprubtmq5p17r5eg62tb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
