@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lenovo.preghelp">
 
-    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,14 @@
         <activity android:name=".dietplanner" />
         <activity android:name=".taskscheduler" />
         <activity android:name=".alert" />
-        <activity android:name=".Track_medicine"></activity>
+        <activity android:name=".Track_medicine" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="orc" />
+
+        <activity android:name=".cameracapture" />
+        <activity android:name=".speak"></activity>
     </application>
 
 </manifest>
