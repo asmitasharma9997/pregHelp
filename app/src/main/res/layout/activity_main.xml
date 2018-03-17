@@ -57,70 +57,42 @@
             android:id="@+id/menu_item1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_announcement_white_24dp"
-            android:onClick="informationModule"
+            android:src="@drawable/alert_hos"
+            android:onClick="alert"
             fab:fab_size="mini"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
-            fab:fab_label="Information Module" />
+            fab:fab_label="Sent Alert" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_accessibility_white_24dp"
-            android:onClick="playVideo"
+            android:src="@drawable/medicine"
+            android:onClick="track"
             fab:fab_size="mini"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
-            fab:fab_label="Exercise Videos" />
+            fab:fab_label="Know a medicine" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_assessment_white_24dp"
-            android:onClick="dietPlan"
+            android:src="@drawable/diet"
+            android:onClick="dietplanner"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
             fab:fab_size="mini"
-            fab:fab_label="Diet Plan" />
+            fab:fab_label="My Diet Plan" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_pregnant_woman_white_24dp"
-            android:onClick="vaccAppoint"
+            android:src="@drawable/task"
+            android:onClick="task"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
             fab:fab_size="mini"
-            fab:fab_label="Vaccination &amp; Appointments" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="helpline"
-            android:src="@drawable/ic_perm_contact_calendar_white_24dp"
-            fab:fab_colorNormal="#304ffe"
-            fab:fab_colorPressed="#3d5afe"
-            fab:fab_size="mini"
-            fab:fab_label="Helpline" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="discussion"
-            android:src="@drawable/ic_question_answer_white_24dp"
-            fab:fab_colorNormal="#304ffe"
-            fab:fab_colorPressed="#3d5afe"
-            fab:fab_size="mini"
-            fab:fab_label="Discuss" />
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_alarm_on_white_24dp"
-            fab:fab_colorNormal="#304ffe"
-            fab:fab_colorPressed="#3d5afe"
-            fab:fab_size="mini"
-            fab:fab_label="Reminder" />
+            fab:fab_label="My Task Scheduler" />
+
     </com.github.clans.fab.FloatingActionMenu>
 </RelativeLayout>
