@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void alert(View view) {
+    public void hospitals(View view) {
         Intent intent = new Intent(MainActivity.this, alert.class);
         startActivity(intent);
     }

@@ -58,7 +58,7 @@ public class Track_medicine extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Track_medicine.this, Camera2.class);
+                Intent intent = new Intent(Track_medicine.this, camcheck.class);
 
                 startActivity(intent);
 

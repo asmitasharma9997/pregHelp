@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lenovo.preghelp">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -30,7 +32,9 @@
         <activity android:name=".cameracapture" />
         <activity android:name=".speak" />
         <activity android:name=".dietplanner" />
-        <activity android:name=".Camera2"></activity>
+        <activity android:name=".Camera2" />
+        <activity android:name=".camcheck" />
+        <activity android:name=".output"></activity>
     </application>
 
 </manifest>

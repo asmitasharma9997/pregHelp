@@ -21,10 +21,10 @@ public class Camera2 extends AppCompatActivity {
 
 //        final String flag1=getIntent().getStringExtra(flag);
 
-        tv1=(TextView)findViewById(R.id.textView2);
+//        tv1=(TextView)findViewById(R.id.textView2);
 //        b1=(Button)findViewById(R.id.button);
 //        img=(ImageView)findViewById(R.id.imageView2);
 
-        tv1.setText("hello");
+//        tv1.setText("hello");
     }
 }

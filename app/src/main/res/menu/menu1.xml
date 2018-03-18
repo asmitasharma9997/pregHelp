@@ -16,7 +16,7 @@
     <item
         android:id="@+id/alert"
         android:orderInCategory="4"
-        android:title="Send alert to hospital"/>
+        android:title="NearBy Hospitals"/>
 
 
 </menu>

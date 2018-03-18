@@ -34,7 +34,7 @@ import java.net.URLConnection;
 
 import static com.example.lenovo.preghelp.MainActivity.MY_PERMISSIONS_REQUEST_LOCATION;
 
-public class alert extends Activity implements LocationListener {
+public class alert extends Activity {
     String longitude;
     String latitude;
     String[] Phone_num = new String[3];
@@ -47,22 +47,35 @@ public class alert extends Activity implements LocationListener {
         setContentView(R.layout.activity_alert);
 
         TextView[] Station_view = new TextView[3];
-        Station_view[0] = (TextView)findViewById(R.id.Station1);
-        Station_view[1] = (TextView)findViewById(R.id.Station2);
-        Station_view[2] = (TextView)findViewById(R.id.Station3);
+        Station_view[0] = (TextView) findViewById(R.id.Station1);
+        Station_view[1] = (TextView) findViewById(R.id.Station2);
+        Station_view[2] = (TextView) findViewById(R.id.Station3);
+
+
+
+        try {
+
+            //sleep 5 seconds
+            Thread.sleep(2000);
+
+
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         Station_view[0].setText("Name : " + "Poonam Hospital" + "\nRating : " + "4" + "\nAddress " + "Kaushambi Road, Near SBI, Jhalwa, Allahabad");
-        Phone_num[0] = "7838673020";
+
 
         Station_view[1].setText("Name : " + "Ayan Hospital" + "\nRating : " + "4" + "\nAddress " + "B-46, Sola Market, Opposite Mehbooba Palace, GTB Nagar, Kareli, Allahabad");
-        Phone_num[1] = "7838673020";
+
 
         Station_view[2].setText("Name : " + "Narayan Swaroop Hospital" + "\nRating : " + "3.1" + "\nAddress " + "A-8/3, Opp. Mundera Mandi, Dharambir Marg, Transport Nagar, Allahabad");
-        Phone_num[2] = "7838673020";
 
 
 
-        Location location = null;
+      /*  Location location = null;
 //        while(location == null) {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
@@ -261,7 +274,7 @@ public class alert extends Activity implements LocationListener {
     }
 
     /* Request updates at startup */
-    @Override
+  /*  @Override
     protected void onResume() {
         super.onResume();
         if (checkLocationPermission()) {
@@ -313,42 +326,9 @@ public class alert extends Activity implements LocationListener {
         } else {
             return true;
         }
-    }
+    }*/
 
-    /*public void goToCamera(View v) {
 
-        startActivity(new Intent(this, CameraActivity.class));
     }
-
-    public void goToVoice(View v) {
-
-        startActivity(new Intent(this, MainActivity.class));
-    }
-
-    public void goToSettings(View v)
-    {
-        startActivity(new Intent(this, SettingsActivityDisplay.class));
-    }
-    public void goToMessageActivity(View v)
-    {
-        startActivity(new Intent(this, MessageOutActivity.class));
-    }
-    public void call_num(View v){
-        switch (v.getId()){
-            case R.id.Call1 : Uri number = Uri.parse("tel:"+Phone_num[0]);
-                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                startActivity(callIntent);
-                break;
-            case R.id.Call2 :
-                number = Uri.parse("tel:" + Phone_num[1]);
-                callIntent = new Intent(Intent.ACTION_DIAL, number);
-                startActivity(callIntent);
-                break;
-            case R.id.Call3 :
-                number = Uri.parse("tel:" + Phone_num[2]);
-                callIntent = new Intent(Intent.ACTION_DIAL, number);
-                startActivity(callIntent);
-                break;
-        }
-    } */
 }
+

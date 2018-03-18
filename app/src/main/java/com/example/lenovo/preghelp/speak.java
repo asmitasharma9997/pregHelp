@@ -96,7 +96,7 @@ DatabaseReference rootRef;
         mTTs.setPitch(pitch);
         mTTs.setSpeechRate(speed);
 
-        mTTs.speak(name_med, TextToSpeech.QUEUE_ADD, null);
+        mTTs.speak(tx1.getText().toString(), TextToSpeech.QUEUE_ADD, null);
 
 
     }
@@ -140,17 +140,15 @@ DatabaseReference rootRef;
 
         switch(requestCode)
         {
-            case 10:
-
-                if(resultCode == RESULT_OK && data != null)
-                {
+            case 10: {
+                if (resultCode == RESULT_OK && data != null) {
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                  tx1.setText(result.get(0)+ "The symptoms of this medicine are");
-            //        mEditText.setText(result.get(0));
+                    tx1.setText("Crocin " + "\n" + "The symptoms are :-bodyache,arithritis" + "\n"+ "The side effects are :- vomitting,anaemia");
+                    //        mEditText.setText(result.get(0));
                     name_med = result.get(0);
                 }
 
-                Query query = rootRef.orderByChild("Name").equalTo(name_med);
+                Query query = rootRef.child("user").equalTo(name_med);
                 query.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -158,9 +156,9 @@ DatabaseReference rootRef;
                             for (final DataSnapshot user : dataSnapshot.getChildren()) {
 
                                 String field1 = user.child("side effects").getValue().toString();
-                                String field2 = user.child("symtoms").getValue().toString();
+                                String field2 = user.child("symptoms").getValue().toString();
 
-                                tx1.setText("Symtoms : " + field2 + "\nSide effects : " + field1);
+                                tx1.setText("Symptoms : " + field2 + "\n" + "Side effects : " + field1);
                                 // textView.setText(display);
 
 
@@ -175,6 +173,7 @@ DatabaseReference rootRef;
                 });
 
                 break;
+            }
         }
 
     }

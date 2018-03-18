@@ -58,11 +58,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/alert_hos"
-            android:onClick="alert"
+            android:onClick="hospitals"
             fab:fab_size="mini"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
-            fab:fab_label="Sent Alert" />
+            fab:fab_label="Nearby Hospitals" />
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item2"
             android:layout_width="wrap_content"
