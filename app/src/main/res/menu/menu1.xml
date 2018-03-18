@@ -6,9 +6,9 @@
         android:orderInCategory="1"
         android:title="My Diet Planner"/>
     <item
-        android:id="@+id/task_schedule"
+        android:id="@+id/archives"
         android:orderInCategory="2"
-        android:title="My Task Scheduler"/>
+        android:title="Archives"/>
     <item
         android:id="@+id/med_track"
         android:orderInCategory="3"

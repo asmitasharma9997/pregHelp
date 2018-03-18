@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+//import android.support.v7.widget.CardView;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,11 @@ public class Track_medicine extends AppCompatActivity {
 
     Button b1;
     Button b2;
+    TextView tv1;
+    public static final String flag="0";
+//    CardView CardView1, CardView2;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +35,10 @@ public class Track_medicine extends AppCompatActivity {
 
 
         b1=(Button)findViewById(R.id.button);
-        b2=(Button)findViewById(R.id.button2);
+        b2=(Button)findViewById(R.id.button1);
+        tv1=(TextView)findViewById(R.id.textView1);
+    //    CardView1=(CardView)findViewById(R.id.CardView1);
+      //  CardView2=(CardView)findViewById(R.id.CardView2);
 
 
 
@@ -49,7 +58,8 @@ public class Track_medicine extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Track_medicine.this,cameracapture.class);
+                Intent intent = new Intent(Track_medicine.this, Camera2.class);
+
                 startActivity(intent);
 
             }

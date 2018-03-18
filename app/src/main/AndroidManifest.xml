@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dietplanner" />
         <activity android:name=".taskscheduler" />
         <activity android:name=".alert" />
         <activity android:name=".Track_medicine" />
@@ -29,7 +28,9 @@
             android:value="orc" />
 
         <activity android:name=".cameracapture" />
-        <activity android:name=".speak"></activity>
+        <activity android:name=".speak" />
+        <activity android:name=".dietplanner" />
+        <activity android:name=".Camera2"></activity>
     </application>
 
 </manifest>

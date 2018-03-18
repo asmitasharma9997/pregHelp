@@ -8,6 +8,9 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
 
+    private final int REQ_CODE_SPEECH_INPUT = 100;
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
+    public static final int MY_PERMISSIONS_REQUEST_CAMERA = 98;
 
 
 
@@ -18,22 +21,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void alert(View view) {
-        Intent intent = new Intent(this, alert.class);
+        Intent intent = new Intent(MainActivity.this, alert.class);
         startActivity(intent);
     }
 
     public void track(View view) {
-        Intent intent = new Intent(this, Track_medicine.class);
+        Intent intent = new Intent(MainActivity.this, Track_medicine.class);
         startActivity(intent);
     }
 
-    public void dietplaner(View view) {
-        Intent intent = new Intent(this, dietplanner.class);
+    public void diet(View view) {
+        Intent intent = new Intent(MainActivity.this, dietplanner.class);
         startActivity(intent);
     }
-
     public void task(View view) {
-        Intent intent = new Intent(this, taskscheduler.class);
+        Intent intent = new Intent(MainActivity.this, taskscheduler.class);
         startActivity(intent);
     }
 

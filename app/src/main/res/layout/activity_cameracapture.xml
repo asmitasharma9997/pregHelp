@@ -7,13 +7,12 @@
     tools:context="com.example.lenovo.preghelp.cameracapture">
 
     <ImageView
-        app:srcCompat="@drawable/hcs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/imageView2"
-        android:layout_marginTop="42dp"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/button"
+        />
 
     <TextView
         android:id="@+id/textView2"

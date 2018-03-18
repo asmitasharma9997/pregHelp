@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/diet"
-            android:onClick="dietplanner"
+            android:onClick="diet"
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
             fab:fab_size="mini"
@@ -92,7 +92,7 @@
             fab:fab_colorNormal="#304ffe"
             fab:fab_colorPressed="#3d5afe"
             fab:fab_size="mini"
-            fab:fab_label="My Task Scheduler" />
+            fab:fab_label="Archives" />
 
     </com.github.clans.fab.FloatingActionMenu>
 </RelativeLayout>
